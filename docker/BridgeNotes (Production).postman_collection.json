@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "67544e5a-a1d8-4dfc-a2f3-92cf8e50e4d5",
+		"name": "BridgeNotes (Production)",
+		"description": "This is for testing ResfulAPI for BridgeNotes assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Harry Yanto",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "harryyanto10@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testing@password123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "testing@password123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/register",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "This API is for registering new user"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjA3MzVjNjc1ZjkwMjk4N2E0ZWNmMWFjZDU3ZmI5NDFiMzgzZTU3ZmJkMTE0MGEyNGFkYmM3NmE2Zjc4ZTA3N2M0ZDM3MDhkNjllNWQ2MzgiLCJpYXQiOjE2MTg0NjQ3MDMuNzEyMzg4LCJuYmYiOjE2MTg0NjQ3MDMuNzEyMzkxLCJleHAiOjE2NTAwMDA3MDMuNzAzMDA3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.NatMVG4bQjCIHDuuzzT04SKQiS0l54mHj-ehdOwSWkHd334_AEi_Pxq6s4xOqZOaJbQMj052q0M1eEANRBbtDlZRKwQ055AebndSOZITBNxnjtpX9BHggjK0M9rJwtSMajoQ6wmQ15JIJaKTH3ZkpEYiZcLmakkgN5yy8Na8lhWNKNt0gGoaZd1EiDs8GVasVuBRF4sc7uzQVEZeEhwk2wCb4m4-oXi0aGVk3G9SZL760VP8cvnz8yP2zRJCjwYxryZnh5LO5-BeCgIIb5rqmBK8RYlS52O-5yhqwc3dtWSnH4LNdD9aQaM2mPjwGt3lvS0Bxb1bBGjtD0f9o8VQCehjcUrTqzk9TKoAbqxteEebsR3azhKNVwxjf_Dq6v8LqhFnAHWWMVBZ_2F4JSEeL8nh6hSl8FPRWSP6iEKEQWRyPCXpj4AcxomV8poVWsmjTNFqEqSz5jSz6KFfX7pr3mW7RKU0jRUgALTrLU48hex7hHT6zZJbO-BXEv4dnqVGWWqlwR6feX448yTOGx4NndoWcorCSv3h-9JfQPWzRXPNByl2GYZWLbEuo58j0myaQbT_7exrwXKzXh8vJX08sV4rreS7cXVWapnG3vL_yifSt0pNBc0rFXRmmwGTuYuL3xSlKOLRnTYXF2lwkhRrT9cCBxf3NqmMgDCRdGc9ASE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/logout",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				},
+				"description": "This to log out specific auth"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "harryyanto10@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testing@password123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/login",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "This is for Loging In user"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Index User Position",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"userposition"
+					]
+				},
+				"description": "This is to get all the data from User Location"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert New User Position",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "active",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "kantor",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"userposition"
+					]
+				},
+				"description": "This to insert new User Position"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific User Position's Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition/2",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"userposition",
+						"2"
+					]
+				},
+				"description": "This is to retrive specific user's position data"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Position",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "inactive",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "rumah",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition/2",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"userposition",
+						"2"
+					]
+				},
+				"description": "This is to update User Positions"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User Position",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition/2",
+					"protocol": "https",
+					"host": [
+						"bridgenotes-zenbknkqba-et",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"userposition",
+						"2"
+					]
+				},
+				"description": "This is to delete specific user position"
+			},
+			"response": []
+		}
+	]
+}
