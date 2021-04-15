@@ -18,6 +18,4 @@ RUN cd /app && /usr/local/bin/composer install --no-dev
 
 RUN chown -R www-data: /app
 RUN chmod -R 777 /app/storage/
-WORKDIR /app
-RUN php artisan passport:install --force
 CMD sh /app/docker/startup.sh
