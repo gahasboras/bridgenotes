@@ -151,5 +151,9 @@ return [
     */
 
     'attributes' => [],
-
+    'validation_failed' => "Validation Error",
+    'created_success' => "Created successfully",
+    'get_success' => "Retrieved successfully",
+    'update_success' => "Update successfully",
+    'delete_success' => "Record Deleted",
 ];

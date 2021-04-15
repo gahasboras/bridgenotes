@@ -13,6 +13,10 @@ return [
     |
     */
 
+    'login_success' => 'Success login user.',
+    'logout_success' => 'Success logout user.',
+    'register_success' => 'Success creating new user login.',
+    'unauthenticated' => 'Please login.',
     'failed' => 'These credentials do not match our records.',
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',

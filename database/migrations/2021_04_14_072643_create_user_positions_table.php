@@ -14,11 +14,12 @@ class CreateUserPositionsTable extends Migration
     public function up()
     {
         Schema::create('user_positions', function (Blueprint $table) {
+            $table->id();
             $table->string('user_id')->nullable(false);
             $table->string('status', 255)->nullable(true)->default('active');
             $table->string('position', 255)->nullable(true);
             $table->timestamps();
-            
+
             $table->index('user_id');
         });
     }

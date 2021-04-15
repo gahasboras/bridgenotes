@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class UserPosition extends Model
 {
     use HasFactory;
+    protected $table = 'user_positions';
+    protected $fillable = [
+        'user_id',
+        'status',
+        'position',
+    ];
 }
