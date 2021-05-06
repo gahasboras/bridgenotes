@@ -21,7 +21,7 @@
 						},
 						{
 							"key": "email",
-							"value": "harryyanto10@gmail.com",
+							"value": "test3@test.com",
 							"type": "text"
 						},
 						{
@@ -37,10 +37,10 @@
 					]
 				},
 				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/register",
+					"raw": "https://beidgenotes-kg35mpyw2q-uc.a.run.app/api/register",
 					"protocol": "https",
 					"host": [
-						"bridgenotes-zenbknkqba-et",
+						"beidgenotes-kg35mpyw2q-uc",
 						"a",
 						"run",
 						"app"
@@ -55,39 +55,6 @@
 			"response": []
 		},
 		{
-			"name": "Logout User",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjA3MzVjNjc1ZjkwMjk4N2E0ZWNmMWFjZDU3ZmI5NDFiMzgzZTU3ZmJkMTE0MGEyNGFkYmM3NmE2Zjc4ZTA3N2M0ZDM3MDhkNjllNWQ2MzgiLCJpYXQiOjE2MTg0NjQ3MDMuNzEyMzg4LCJuYmYiOjE2MTg0NjQ3MDMuNzEyMzkxLCJleHAiOjE2NTAwMDA3MDMuNzAzMDA3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.NatMVG4bQjCIHDuuzzT04SKQiS0l54mHj-ehdOwSWkHd334_AEi_Pxq6s4xOqZOaJbQMj052q0M1eEANRBbtDlZRKwQ055AebndSOZITBNxnjtpX9BHggjK0M9rJwtSMajoQ6wmQ15JIJaKTH3ZkpEYiZcLmakkgN5yy8Na8lhWNKNt0gGoaZd1EiDs8GVasVuBRF4sc7uzQVEZeEhwk2wCb4m4-oXi0aGVk3G9SZL760VP8cvnz8yP2zRJCjwYxryZnh5LO5-BeCgIIb5rqmBK8RYlS52O-5yhqwc3dtWSnH4LNdD9aQaM2mPjwGt3lvS0Bxb1bBGjtD0f9o8VQCehjcUrTqzk9TKoAbqxteEebsR3azhKNVwxjf_Dq6v8LqhFnAHWWMVBZ_2F4JSEeL8nh6hSl8FPRWSP6iEKEQWRyPCXpj4AcxomV8poVWsmjTNFqEqSz5jSz6KFfX7pr3mW7RKU0jRUgALTrLU48hex7hHT6zZJbO-BXEv4dnqVGWWqlwR6feX448yTOGx4NndoWcorCSv3h-9JfQPWzRXPNByl2GYZWLbEuo58j0myaQbT_7exrwXKzXh8vJX08sV4rreS7cXVWapnG3vL_yifSt0pNBc0rFXRmmwGTuYuL3xSlKOLRnTYXF2lwkhRrT9cCBxf3NqmMgDCRdGc9ASE",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/logout",
-					"protocol": "https",
-					"host": [
-						"bridgenotes-zenbknkqba-et",
-						"a",
-						"run",
-						"app"
-					],
-					"path": [
-						"api",
-						"logout"
-					]
-				},
-				"description": "This to log out specific auth"
-			},
-			"response": []
-		},
-		{
 			"name": "Login User",
 			"request": {
 				"method": "POST",
@@ -97,7 +64,7 @@
 					"urlencoded": [
 						{
 							"key": "email",
-							"value": "harryyanto10@gmail.com",
+							"value": "harryyanto9@gmail.com",
 							"type": "text"
 						},
 						{
@@ -108,10 +75,10 @@
 					]
 				},
 				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/login",
+					"raw": "https://beidgenotes-kg35mpyw2q-uc.a.run.app/api/login",
 					"protocol": "https",
 					"host": [
-						"bridgenotes-zenbknkqba-et",
+						"beidgenotes-kg35mpyw2q-uc",
 						"a",
 						"run",
 						"app"
@@ -133,7 +100,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGZlMTQyNDQyZTExZWQwYjg1N2QwNTUyMDg2N2ExMjAzYmUwZDI2OTI2MWQwMzA2YWRjMDA3ZmRjODgxYTA2ZmZkZGU5OTg0ZGE3MDhmZDAiLCJpYXQiOjE2MTg1NTQ2MTEuNzM3Njg5LCJuYmYiOjE2MTg1NTQ2MTEuNzM3Njk2LCJleHAiOjE2NTAwOTA2MTEuNzI2NDE1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.gw7oq3RaW_plr4cK8SLu5P8808F-iv5vQmXfpt-2ndn_4GRj-5R6Vw2zB3rhRcyScb-V35hrTRgcrVPLIq4vElJxDOw1eNAONtChf3qy2DJuyb8NiuQKebeS37SQYshwCvthAeVWJW2Mslf5omsV-p1IQNgnYybSgGDYs7hMuBqpJTOJFg_7ZIRiEV4OmhD_Jfx0i7ozuEsHMffz7ckumysjsVx_i9TPofMMLJCvXe8mNhM7k5j3yLLB5puFikyI77PFWWien3pOxAvblnreWtNTh7kOm3GQtxghPG8mY7BQLnTDbVfFQXfcqo7Bf97Sa5jh6X4tBKyeh27nYigZNsIrMgDiqchtvNKs-LTIJYv4Uqc2X4sygDzNESqVGTj0QTmF_QMsHIlO1CR9njNAtleUom7GqBRaE5URAXW7_lk7EDCHpknxH-by0eazY2GU3AYmE8hl5St9akMovd12-zgYkf5nFJSjVjGyj9rD8Yl9668gVwwH9VvFGh8cAJHr-WagIFpmdyDtEPsoUuRI02I09l4jGoousTWwPYhW7ggiN398tQ29WhyNT7eyq4EV66i_cTgy_8Xhmptgl2LJiZ7NvGS6u52K6wYz1jZmpFrOnvLmTqcqMpdLF1NtBEuxSO3m6xqjZ597UcBVSt2QquyXcrrWAj2UtpAvz3EIPOk",
 							"type": "string"
 						}
 					]
@@ -141,10 +108,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition",
+					"raw": "https://beidgenotes-kg35mpyw2q-uc.a.run.app/api/userposition",
 					"protocol": "https",
 					"host": [
-						"bridgenotes-zenbknkqba-et",
+						"beidgenotes-kg35mpyw2q-uc",
 						"a",
 						"run",
 						"app"
@@ -166,7 +133,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDUyZjUyNjFjMTlmYzMwYWZjYjMwODUyOWY5NzUwN2EzYzdjZDAyZGNhOTljMjM2MmZiYTVmYzc0NTk5MGJjODJlN2U3M2JkODg4MzAwYjUiLCJpYXQiOjE2MTg1NTQ3NTEuNzI2NTQ2LCJuYmYiOjE2MTg1NTQ3NTEuNzI2NTUyLCJleHAiOjE2NTAwOTA3NTEuNzE1MjE3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8Q6QqUcP8W9WRFspuyobEnnRyPI3FW6L6e1sQbfR6gaMM7ziZbhFPz3KO4ZR9FPpvbRrWf2Gr25PnkzKGatRmkkxD87eBpt6fS3WMHJQYxF8FsjBdkuW1l_1z3a52iKOVqeNPpOH9r9fzrCsE6efGV_EXh4xgHOcVBAG2wQ5PUwSemNFwt-UxN1H15POTdWhTATXYP1ShzpKuMYA0cS9Qr76YGDDhfyYHonTNaTKxkASottTDyX1vyVJZ3i5OaXvZtEElT3iw8BOU4p4FhCoroavp7o6RtcQN2j-sCd3NRfQfy3iJa1zfIU0zvBAu_OS6bvIDP2RGrbzCvidaTs6QaaLQxRGqD7K5-mGPj-pTq1OCgCVRpD8Yf2KsWbnnvYrOl85UQKOBBAVgxAGTWFjCiH13fdoRs8sVdjIaIU-cT8LszP7L0R-cgYKISzmk5g6jMmi4d2UIJ9Mw2QuoiAjQu-Br0k23LtFfs_dReoww94G4b0GSFojjbXdGYIRLf4wRuxRfa3qgffGH9mmhtondfpLaJImb9MUQZb5DAtm0ELVjeU7bfpGqXn5nIj6VNTzk5rLW5mlCH1Y-p7S-2UuKf4W-kEFdvDEGvgB3W6swprOSkcKWiM4QIyth-0uy6Zx26YtoAE7BoIlMneHkzaLxni1ESgfEOnmBqPqFmny9U",
 							"type": "string"
 						}
 					]
@@ -178,21 +145,21 @@
 					"urlencoded": [
 						{
 							"key": "status",
-							"value": "active",
+							"value": "inactive",
 							"type": "text"
 						},
 						{
 							"key": "position",
-							"value": "kantor",
+							"value": "Home",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition",
+					"raw": "https://beidgenotes-kg35mpyw2q-uc.a.run.app/api/userposition",
 					"protocol": "https",
 					"host": [
-						"bridgenotes-zenbknkqba-et",
+						"beidgenotes-kg35mpyw2q-uc",
 						"a",
 						"run",
 						"app"
@@ -214,7 +181,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGZlMTQyNDQyZTExZWQwYjg1N2QwNTUyMDg2N2ExMjAzYmUwZDI2OTI2MWQwMzA2YWRjMDA3ZmRjODgxYTA2ZmZkZGU5OTg0ZGE3MDhmZDAiLCJpYXQiOjE2MTg1NTQ2MTEuNzM3Njg5LCJuYmYiOjE2MTg1NTQ2MTEuNzM3Njk2LCJleHAiOjE2NTAwOTA2MTEuNzI2NDE1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.gw7oq3RaW_plr4cK8SLu5P8808F-iv5vQmXfpt-2ndn_4GRj-5R6Vw2zB3rhRcyScb-V35hrTRgcrVPLIq4vElJxDOw1eNAONtChf3qy2DJuyb8NiuQKebeS37SQYshwCvthAeVWJW2Mslf5omsV-p1IQNgnYybSgGDYs7hMuBqpJTOJFg_7ZIRiEV4OmhD_Jfx0i7ozuEsHMffz7ckumysjsVx_i9TPofMMLJCvXe8mNhM7k5j3yLLB5puFikyI77PFWWien3pOxAvblnreWtNTh7kOm3GQtxghPG8mY7BQLnTDbVfFQXfcqo7Bf97Sa5jh6X4tBKyeh27nYigZNsIrMgDiqchtvNKs-LTIJYv4Uqc2X4sygDzNESqVGTj0QTmF_QMsHIlO1CR9njNAtleUom7GqBRaE5URAXW7_lk7EDCHpknxH-by0eazY2GU3AYmE8hl5St9akMovd12-zgYkf5nFJSjVjGyj9rD8Yl9668gVwwH9VvFGh8cAJHr-WagIFpmdyDtEPsoUuRI02I09l4jGoousTWwPYhW7ggiN398tQ29WhyNT7eyq4EV66i_cTgy_8Xhmptgl2LJiZ7NvGS6u52K6wYz1jZmpFrOnvLmTqcqMpdLF1NtBEuxSO3m6xqjZ597UcBVSt2QquyXcrrWAj2UtpAvz3EIPOk",
 							"type": "string"
 						}
 					]
@@ -222,10 +189,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition/2",
+					"raw": "https://beidgenotes-kg35mpyw2q-uc.a.run.app/api/userposition/1",
 					"protocol": "https",
 					"host": [
-						"bridgenotes-zenbknkqba-et",
+						"beidgenotes-kg35mpyw2q-uc",
 						"a",
 						"run",
 						"app"
@@ -233,7 +200,7 @@
 					"path": [
 						"api",
 						"userposition",
-						"2"
+						"1"
 					]
 				},
 				"description": "This is to retrive specific user's position data"
@@ -248,7 +215,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTIyODUwYjExYTE2NjQ4OTQ1NDE2MzY1NjIwYjk5MGQ4MWFhYzFhZjcwNzRhMDJjMWQ0N2E3MjZlODAzZjY4NWRmYWRkYTg0ZGI4Y2E4MDIiLCJpYXQiOjE2MTg0ODgwMDMuNTQwNjc2LCJuYmYiOjE2MTg0ODgwMDMuNTQwNjgzLCJleHAiOjE2NTAwMjQwMDMuNTI5NTEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.iEzorecQuYLMIO6U0kA_FByJ-LILrgHWd0pQ4hmLSDYL6PKH5CI04-hScU0NExlZxpObg7SELaiHdPEznf2oNWv_4dX6H8fP9PrAiN3rBfd1VXfiDGj_dIWWqkNFDf_B11tM6sNz8S9eNkaVcHBWJd-7leH9Y5B6IzjmRSP34ORG5LNKmWEHdUHUAe9hmQbd_4_0XQMWDMDltqj7xTOnWebtSaRiHRljvbS5f0Ms-4S5fuPYvBG11lX03DFuyVOOBUttvJn2er7rwpEYXWz8gWNNs19u9SiVSXuUML3qlMVVmjb3CuvF9mVqhEU0PAXnZdQ5C_NMCEvLBXPTRXnMTERFEUa5N59pUZSkgd_leXNeCb7C90E5Ei8Apl6426VUzyK2beK5DNo9CgczhvRy2D3R1NozLiuoEuUfcRBrwDMf20SsJG7xFpui6blJxgW0iZq7h_bY-5vUE-qJObMXBNy47asd2MBErG8aOzvSrRRdh3rHQoMNUVYZa4ijR9iIn5VFCpi5zeW9CqnuEirK7YW58qktjT9t3_st7AnLPjp9Zt2a-92_az-ZJI9uEdMFqMitfbgYw_MlRkR0pS2L5hZu0hGM2UJjw8k3b_i3iqqK3wDZtRWjoRm_XqRR_WbBBXHn84FA-2Y0VVf41ufQdRPitYV55psVYkmC8VY3i9E",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMxY2EwOTMxYTE1MDMwYzZmNTdhZjJlZTEyZjNhODg0ODI2YmJhM2UwZjM1NDUyMWQ0Yzc1YTk5Y2YxYjhiZmJiZWZhMjZhMDlmMmIzMTEiLCJpYXQiOjE2MTg1NTQwNDAuNjc3NzA1LCJuYmYiOjE2MTg1NTQwNDAuNjc3NzEsImV4cCI6MTY1MDA5MDA0MC42NjY1Nywic3ViIjoiMyIsInNjb3BlcyI6W119.d-BzLfml_cpgqX4gXqzR_wkfd4zjLt8MOIHoCbE75zhloKtiea2fm1arUfyytsV9Htnn5IDRau20HBF8YjrU0NZLMSqijoEfSRQznN-Zns5JlK5yD9RBF6x1vAp2BdvRLTIMaXgRuwD6g9Qg86_Mtaq54STqqPlVxW2wmzfPaPj2OxwyXponBMfWO4wPmI0IMNZ0voDS_qarullTroG0_bNyyA1ToljAt5_dHFY7qoR9A6md_4EJL8-BBMYS_rtI50KgVUyXRVSdsnz0Ekz2WQQPTYFIDuLwfBeLCegbmFR5ROfg9tG4Pbk6lJWD1yaMkkLskBIXaf3OXlgR1s_6UP4mQ-LFToVBoQ48qB2yiUMfQndvalWMyNodQLHzfWbu0JFz6aPAiXGSwPKfgkp-72bzt1ci80UTzLJskklhfn2d5h8gnRCiYw8kmJ-kZOLafMRcx4gV4lvAFujjKDr_A8hvMoRWYe-_8otZo1v5Ls1QfHptRFz0dFjDLlfnMi8AcpRNeI_3Yq-CkH4xe3CqpIfxzK5VFNFs71P9A7NFguoQrVAD9YAhXKVb_lrF9TZqasK0ydQ7qKT6xYsXXCu7k2lBbq6TnCM5hyw_LdBowK0Cmbg6y6sOyDipOcXgQHD6oRBBXbRj10n9OPEf-1ipmhV1Gqo7XNNjVibOlx_QbjY",
 							"type": "string"
 						}
 					]
@@ -265,16 +232,16 @@
 						},
 						{
 							"key": "position",
-							"value": "rumah",
+							"value": "bathroom",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition/2",
+					"raw": "https://beidgenotes-kg35mpyw2q-uc.a.run.app/api/userposition/6",
 					"protocol": "https",
 					"host": [
-						"bridgenotes-zenbknkqba-et",
+						"beidgenotes-kg35mpyw2q-uc",
 						"a",
 						"run",
 						"app"
@@ -282,7 +249,7 @@
 					"path": [
 						"api",
 						"userposition",
-						"2"
+						"6"
 					]
 				},
 				"description": "This is to update User Positions"
@@ -305,10 +272,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://bridgenotes-zenbknkqba-et.a.run.app/api/userposition/2",
+					"raw": "https://beidgenotes-kg35mpyw2q-uc.a.run.app/api/userposition/6",
 					"protocol": "https",
 					"host": [
-						"bridgenotes-zenbknkqba-et",
+						"beidgenotes-kg35mpyw2q-uc",
 						"a",
 						"run",
 						"app"
@@ -316,7 +283,7 @@
 					"path": [
 						"api",
 						"userposition",
-						"2"
+						"6"
 					]
 				},
 				"description": "This is to delete specific user position"
